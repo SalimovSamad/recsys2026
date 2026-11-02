@@ -1,0 +1,67 @@
+{
+ "ItemKNN": {
+  "params": {
+   "k": 5,
+   "threshold": 4
+  },
+  "val_ndcg": 0.11225876602397741,
+  "n_trials": 20
+ },
+ "EASE": {
+  "params": {
+   "lam": 91.03710308994252,
+   "threshold": 4
+  },
+  "val_ndcg": 0.11063945190352413,
+  "n_trials": 12
+ },
+ "iALS": {
+  "params": {
+   "factors": 128,
+   "reg": 0.10629331102000901,
+   "alpha": 4.341440466473389,
+   "threshold": 4,
+   "epochs": 3
+  },
+  "val_ndcg": 0.09878299260660621,
+  "n_trials": 20
+ },
+ "timeSVD++": {
+  "params": {
+   "factors": 16,
+   "lr": 0.006754114663208478,
+   "reg": 0.003296624427837483,
+   "beta": 0.44846176222390444,
+   "n_bins": 5,
+   "pop_blend": 0.25,
+   "epochs": 1
+  },
+  "val_ndcg": 0.05819028965294816,
+  "n_trials": 20
+ },
+ "FM (meta)": {
+  "params": {
+   "dim": 64,
+   "lr": 0.003,
+   "l2": 1.3e-05,
+   "n_neg": 4,
+   "threshold": 4,
+   "meta_reg": 1.0,
+   "epochs": 24
+  },
+  "val_ndcg": 0.07914386767475769,
+  "n_trials": 16
+ },
+ "FM (ID only)": {
+  "params": {
+   "dim": 64,
+   "lr": 0.00366246055606072,
+   "l2": 3.465416538676045e-05,
+   "n_neg": 4,
+   "threshold": 4,
+   "epochs": 16
+  },
+  "val_ndcg": 0.08164043528144851,
+  "n_trials": 16
+ }
+}
